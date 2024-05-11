@@ -1,0 +1,109 @@
+{% include 'base.html' %}
+
+{% block content  %}
+
+<h1 class='text-center p-3 text-dark rounded'>ORAL CANCER PREDICTON USING ML</h1>
+<br/>
+
+<div class='container mb-6 mt-2 p-4'>
+
+    <div class='row'>
+        <div class='col-md-8'>
+                    <form method="post">
+
+                        {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                    <div class="mb-3">
+                                        <label for="tumor_size" class="form-label"><b>Tumor Size</b></label>
+                                        <input type="number" step="0.1" class="form-control" name="tumor_size" id="tumor_size" min="0" max="5" required >
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="alcohol_consumption" class="form-label"><b>Alcohol Consumption</b></label>
+                                        <select name="alcohol_consumption" id="alcohol_consumption" required class="form-control">
+                                            <option value=""></option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="restricted_mouth_opening" class="form-label"><b>Restricted Mouth Opening</b></label>
+                                        <select name="restricted_mouth_opening" id="restricted_mouth_opening" required class="form-control">
+                                            <option value=""> </option>
+                                            <option value="1">1 finger</option>
+                                            <option value="2">2 fingers</option>
+                                            <option value="3">3 fingers</option>
+                                            <option value="4">4 fingers</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <div class="mb-3">
+                                        <label for=" age_group" class="form-label"><b>Age</b></label>
+                                        <select name="age_group" id="age_group" required class="form-control">
+                                            <option value=""> </option>
+                                            <option value="0">Less than 20</option>
+                                            <option value="1">Between 20 to 40</option>
+                                            <option value="2">Greater than 40</option>
+                                        </select>
+                                    </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="tobacco_use" class="form-label"><b>Tobbaco Use</b></label>
+                                    <select name="tobacco_use" id="tobacco_use" required class="form-control">
+                                        <option value=""> </option>
+                                        <option value="1">Yes</option>
+                                        <option value="0">No</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="reverse_smoking" class="form-label"><b>Reverse Smoking</b></label>
+                                    <select name="reverse_smoking" id="reverse_smoking" required class="form-control">
+                                        <option value=""> </option>
+                                        <option value="1">Yes</option>
+                                        <option value="0">No</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="gender" class="form-label"><b>Gender</b></label>
+                                    <select name="gender" id="gender" required class="form-control">
+                                        <option value=""> </option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    <button type="submit" value="Submit" class="btn btn-success mt-2 mb-3 shadow pt-3 pb-3 pl-1 pr-1"><b>Submit</b></button>
+
+            </form>
+
+         </div>
+
+        
+
+    </div>
+
+
+</div>
+
+
+
+ 
+{% endblock content  %}

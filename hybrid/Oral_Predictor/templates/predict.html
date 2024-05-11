@@ -1,0 +1,51 @@
+{% include 'base.html' %}
+
+{% block content  %}
+
+{% if classification_result == 0 %}
+
+<div class="container">
+
+    <h1 class='text-center mt-3'>Predicted Results</h1>
+    <hr>
+
+    <h1 class='text-center text-primary'> Your Condition is Normal</h1>
+
+    <h1 class='text-center'><b class='text-danger'>You Are Not Affected By Oral Cancer</b></h1>
+
+</div>
+{% elif classification_result == 1 %}
+<div class="container">
+
+    <h1 class='text-center mt-3'>Predicted Results</h1>
+    <hr>
+
+    <h1 class='text-center text-primary'>Your condition is Normal but there is a chance of getting affected</h1>
+
+    <h1 class='text-center'><b class='text-danger'>Please visit your doctor for further information </b></h1>
+
+</div>
+
+
+{% else %}
+
+<div class="container">
+
+    <h1 class='text-center mt-3'>Predicted Results</h1>
+    <hr>
+
+    <h1 class='text-center text-primary'> You Are Affected By Oral Cancer</h1>
+
+    <h1 class='text-center'><b class='text-success'>Consult your doctor</b></h1>
+
+    <a class='btn btn-primary mt-4 p-1 text-center' href="{% url 'home' %}">Go Back</a>
+
+</div>
+
+{% endif %}
+
+
+
+
+
+{% endblock content  %}

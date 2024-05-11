@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class='text-center text-success mt-4 p-2'>Oral Cancer Predicted Database</h1>
+    <hr>
+
+    <div class='container p-2'>
+
+            <table class="table p-2 shadow rounded">
+            <thead>
+                <tr>
+                <th class='table-success' scope="col">patient_id</th>
+                <th class='table-success' scope="col">tumor_size</th>
+                <th class='table-success' scope="col">tobacco_use</th>
+                <th class='table-success' scope="col">alcohol_consumption</th>
+                <th class='table-success' scope="col">reverse_smoking</th>
+                <th class='table-success' scope="col">restricted_mouth_opening</th>
+                <th class='table-success' scope="col">gender</th>
+                <th class='table-success' scope="col">age_group</th>
+                <th class='table-success' scope="col">Oral Cancer Prediction</th>
+                <th class='table-danger' scope="col">Action</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+
+                {% if Oral_records %}
+
+                    {% for data in Oral_records %}
+                        <tr>
+
+                            <th scope="row">{{data.patient_id}}</th>
+                            <td>{{data.tumor_size}}</td>
+                            <td>{{data.tobacco_use}}</td>
+                            <td>{{data.alcohol_consumption}}</td>
+                            <td>{{data.reverse_smoking}}</td>
+                            <td>{{data.restricted_mouth_opening}}</td>
+                            <td>{{data.gender}}</td>
+                            <td>{{data.age_group}}</td>
+                            <td>
+                                <b> 
+                                    {% if data.classification == 0 %}
+
+                                    <p class='text-success'> {{data.classification}} Safe </p>
+
+                                    {% elif  data.classification == 1 %}
+                                    <p class='text-warning'> {{data.classification}} Chance of future occurance </p>
+
+                                    {% else %}
+
+                                    <p class='text-danger'>  {{data.classification}} Affected
+
+                                    {% endif%}
+                                </b>
+                            </td>
+
+                            <td>
+
+                               <a href="{% url 'delete' data.id %}" class="btn btn-danger m-1"> Delete </a>
+
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}   
+
+                {% else %}
+
+                    <p>No Data in The Database so Far!</p>     
+
+                {% endif %}
+                    
+            </tbody>
+        </table>
+
+    </div>
+
+{% endblock  %}

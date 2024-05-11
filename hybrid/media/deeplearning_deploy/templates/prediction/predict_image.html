@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Image</title>
+      
+    <style>
+        body {
+          background-image: url("https://img.freepik.com/free-photo/health-still-life-with-copy-space_23-2148854031.jpg");
+
+   
+
+  /* Center and scale the image nicely */
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+      font-family: "Exo 2";
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
+    h1{
+      padding: 80px; /* Adjust the padding as needed */
+        
+          text-align: center;
+    }
+    .zone ul li {
+      display: inline-block;
+    }
+    .zone ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .zone ul li a:hover{
+      background: #fff;
+      color: black;
+    }
+    .zone ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav .zone{
+      max-width: 1250px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    
+    .zone {      
+      margin: auto;
+      position: absolute;
+      top: 10%; left: 35%; bottom: 0; right: 0;
+      background: radial-gradient(ellipse at center,rgb(2, 205, 245) 0,rgb(178, 228, 228));
+      width:50%;
+      height:50%;  
+      border:5px dashed white;
+      text-align:center;
+      color: white;
+      z-index: 20;
+      transition: all 0.3s ease-out;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.05),inset 0 0 .25em 0 rgba(0,0,0,.25);
+      .btnCompression {
+        .btn {
+    
+        } 
+        .active {
+          background: #EB6A5A;
+          color:white;
+        }
+      }
+      i {
+        text-align: center;
+        font-size: 10em;  
+        color:#fff;
+        margin-top: 50px;
+      }
+      .selectFile {
+        height: 50px;
+        margin: 20px auto;
+        position: relative;
+        width: 200px;          
+      }
+    
+      label, input {
+        cursor: pointer;
+        display: block;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-radius: 5px;          
+      }
+    
+      label {
+        background: #fff;
+        color:#EB6A5A;
+        display: inline-block;
+        font-size: 1.2em;
+        line-height: 50px;
+        padding: 0;
+        text-align: center;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: 400;   
+        box-shadow: 0 1px 1px gray;
+      }
+    
+      input[type=file] {
+        opacity: 0;
+      }
+    
+    }
+    .zone.in {
+      color:white;
+      border-color:white;
+      background: radial-gradient(ellipse at center,#EB6A5A 0,#c9402f 100%);
+      i {          
+        color:#fff;
+      }
+      label {
+        background: #fff;
+        color:#EB6A5A;
+      }
+    }
+    .zone.hover {
+      color:gray;
+      border-color:white;
+      background:#fff;
+      border:5px dashed gray;
+      i {          
+        color:#EB6A5A;
+      }
+      label {
+        background: #fff;
+        color:#EB6A5A;
+      }
+    }
+    .zone.fade {
+      transition: all 0.3s ease-out;
+      opacity: 1;
+    }
+        .zone {
+          padding: 80px; /* Adjust the padding as needed */
+          box-sizing: border-box;
+          text-align: center; /* Center text within .zone */
+        }
+    
+      </style>
+</head>
+<body >
+  <div class="container-fluid">
+  <a class="navbar-brand" href="{% url 'index' %}" style=" color:black; font-weight: bold; font-size: 20px ">Home</a>
+</div>
+  <centre>
+    <h1 class='text-center p-3 text-dark rounded'>ORAL CANCER PREDICTION USING DL</h1>
+  <div class="zone">
+    <div><h2>Upload an image</h2></div>                    
+    <div class="selectFile"> 
+  <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <label for="file">Select file</label> 
+      <input type="file" id="file" name="image" accept="image/*">
+    </div>
+      
+      <nav>
+        <div>
+          <ul>
+            <li><button type="submit">Predict</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </form>
+</centre>
+    
+  
+
+</body>
+</html>

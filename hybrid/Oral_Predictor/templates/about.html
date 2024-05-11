@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oral Cancer Detection</title> 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'about1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body >
+<div class="dg">
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Oral Cancer Detection</a>
+      </div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+        <div><br>
+<br><br>
+          <h1 class="about1-section">About Project</h1><br>
+          <p class="about-section">Oral Cancer is defined as abnormal mass of tissue, the  growth of which exceeds and is uncoordinated with neighbouring tissue and growth persist in same excessive manner even after the cessation of stimuli which evoked the change in oral region.There are many types of oral cancer and they can be classified as Benign and Malignant.The proposed work consists of a hybrid system, which is a combination of a feature-based system and an expert system. A feature-based system for early detection of oral cancer using machine learning. Deep learning is used to create an Expert system to determine if it is oral cancer or not. Generally Oral cancer is detected based on biopsy results but in our case detection is done through CNN classifier and some ML algorithms which is based on features that are considered from survey.</p>
+          
+        </div>
+</div>
+</body>
+</html>

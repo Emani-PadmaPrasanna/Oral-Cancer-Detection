@@ -1,0 +1,74 @@
+patient_id,tumor_size,tobacco_use,alcohol_consumption,reverse_smoking,restricted_mouth_opening,gender,age_group,diagnosis
+187,1.8,Yes,No,No,3,M,2,Leukoplakia with dysplasia
+189,0.6,No,Yes,No,4,F,2,Leukoplakia without dysplasia
+201,3.9,Yes,No,Yes,2,M,2,OSCC
+202,4.4,Yes,Yes,Yes,1,M,2,OSCC
+204,0.2,No,Yes,No,4,M,1,Leukoplakia without dysplasia
+207,3,Yes,No,No,4,M,2,Leukoplakia with dysplasia
+208,5,Yes,Yes,No,1,F,2,OSCC
+209,0.3,No,No,No,4,M,0,Leukoplakia without dysplasia
+211,3,Yes,No,Yes,2,F,1,Leukoplakia with dysplasia
+213,2.3,No,No,Yes,3,M,1,Leukoplakia with dysplasia
+214,3.7,Yes,Yes,Yes,1,M,0,OSCC
+217,3.3,Yes,No,No,2,M,1,Leukoplakia with dysplasia
+218,2.9,Yes,Yes,No,3,M,1,Leukoplakia with dysplasia
+219,3.5,Yes,No,Yes,2,F,1,OSCC
+221,0.8,Yes,No,No,4,M,2,Leukoplakia without dysplasia
+223,0.9,No,Yes,No,4,F,2,Leukoplakia without dysplasia
+222,2.3,No,No,Yes,3,F,1,Leukoplakia with dysplasia
+225,3.2,Yes,No,No,1,M,2,OSCC
+226,1.1,No,No,Yes,4,F,2,Leukoplakia with dysplasia
+227,4.7,Yes,Yes,No,1,M,1,OSCC
+228,1.4,Yes,No,No,2,M,0,Leukoplakia with dysplasia
+229,4.2,Yes,Yes,Yes,3,M,2,OSCC
+230,1.9,Yes,Yes,No,4,M,1,Leukoplakia with dysplasia
+231,3.7,No,Yes,Yes,2,M,1,OSCC
+232,4.1,No,Yes,Yes,1,M,2,OSCC
+233,2.2,No,No,Yes,2,M,2,Leukoplakia with dysplasia
+234,1.8,No,Yes,No,3,M,1,Leukoplakia with dysplasia
+235,1,No,Yes,Yes,4,M,1,Leukoplakia with dysplasia
+236,3.9,No,Yes,Yes,1,M,1,OSCC
+237,2.1,No,Yes,No,2,M,2,Leukoplakia with dysplasia
+238,2.9,No,No,No,3,M,1,Leukoplakia with dysplasia
+239,0.6,No,No,No,4,M,2,Leukoplakia without dysplasia
+240,0.1,Yes,Yes,Yes,3,F,1,Leukoplakia without dysplasia
+241,2.6,Yes,Yes,No,2,M,2,Leukoplakia with dysplasia
+242,2.1,Yes,No,Yes,2,F,1,Leukoplakia with dysplasia
+243,0.3,No,Yes,Yes,4,M,2,Leukoplakia without dysplasia
+244,3,No,No,Yes,3,M,1,Leukoplakia with dysplasia
+245,2,Yes,Yes,Yes,4,M,2,Leukoplakia with dysplasia
+246,2.5,No,No,Yes,4,M,1,Leukoplakia with dysplasia
+247,3.4,No,Yes,No,2,F,2,OSCC
+248,2.8,No,Yes,No,3,M,1,Leukoplakia with dysplasia
+249,3.6,Yes,Yes,No,1,M,1,OSCC
+250,1.3,Yes,Yes,No,4,M,1,Leukoplakia with dysplasia
+251,0.2,Yes,No,Yes,4,M,2,Leukoplakia without dysplasia
+252,2.4,No,Yes,Yes,2,M,1,Leukoplakia with dysplasia
+253,1.8,Yes,No,No,2,M,2,Leukoplakia with dysplasia
+254,0.4,Yes,No,No,4,M,0,Leukoplakia without dysplasia
+256,3.8,Yes,No,No,1,F,1,OSCC
+257,1.5,Yes,Yes,Yes,2,M,1,Leukoplakia with dysplasia
+258,3.2,Yes,Yes,No,1,M,2,OSCC
+259,2.8,Yes,No,Yes,3,F,2,Leukoplakia with dysplasia
+260,2.7,No,Yes,Yes,2,M,1,Leukoplakia with dysplasia
+261,0.4,No,No,Yes,3,M,0,Leukoplakia without dysplasia
+262,1.6,No,Yes,No,3,F,1,Leukoplakia with dysplasia
+263,1.1,Yes,No,No,2,M,1,Leukoplakia with dysplasia
+264,4.9,Yes,Yes,Yes,1,M,1,OSCC
+265,3,Yes,Yes,No,2,F,2,OSCC
+266,2.7,Yes,No,Yes,2,M,1,OSCC
+267,3.6,No,Yes,Yes,2,M,2,OSCC
+268,4,No,No,Yes,3,M,1,OSCC
+269,3.5,No,Yes,No,3,F,1,OSCC
+270,4.1,Yes,No,No,2,M,2,OSCC
+271,4.8,No,No,No,1,M,1,OSCC
+272,3.3,Yes,Yes,Yes,2,M,0,OSCC
+273,3.1,Yes,Yes,No,3,F,1,OSCC
+274,3.2,Yes,No,Yes,2,M,2,OSCC
+275,0.5,Yes,Yes,Yes,4,M,0,Leukoplakia without dysplasia
+276,0.7,Yes,Yes,Yes,4,F,1,Leukoplakia without dysplasia
+277,1,Yes,Yes,No,4,M,1,Leukoplakia without dysplasia
+278,0.2,Yes,Yes,No,4,M,0,Leukoplakia without dysplasia
+279,0.8,No,Yes,Yes,4,F,1,Leukoplakia without dysplasia
+280,0.9,Yes,No,Yes,4,M,2,Leukoplakia without dysplasia
+281,0.1,No,No,Yes,4,M,2,Leukoplakia without dysplasia

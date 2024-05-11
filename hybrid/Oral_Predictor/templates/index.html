@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oral Cancer Detection</title> 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'abc.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+        /* CSS to remove underline from anchor tags */
+        a {
+            text-decoration: none;
+	    color: black;
+        }
+    </style>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Oral Cancer Detection</a>
+      </div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Oral Cancer Detection</div>
+    <div class="sub_title">A Hybrid System</div>
+    <div class="btns">
+      <button><a href="{% url 'home' %}" style=" font-weight: bold; font-size: 20px ">Machine Learning</a></button>
+      <button><a href="{% url 'predict_image' %}" style=" font-weight: bold; font-size: 20px ">Deep Learning</a></button>
+    </div>
+  </div>
+</body>
+</html>
